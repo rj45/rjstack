@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>36</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>rj45Creates</string>
+        </entry>
+      </elementAttributes>
+      <pos x="100" y="780"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>60</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>FPGA Stack Machine CPU from Scratch</string>
+        </entry>
+      </elementAttributes>
+      <pos x="360" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>48</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Features:
+- 16 bits
+- Designed to be easy to write a compiler for
+     - No register allocator required!
+     - C-like languages fully supported
+- One hardware stack (data stack)
+- Fast call-frame-local variable access
+- Link (return address) register instead of return stack
+- 8 and 16 bit instructions
+- WASM and RISC-V inspired instruction set
+- No flags (like RISC-V)
+- Pipelined
+- Designed for FPGA with minimal Verilog</string>
+        </entry>
+      </elementAttributes>
+      <pos x="440" y="120"/>
+    </visualElement>
+  </visualElements>
+  <wires/>
+  <measurementOrdering/>
+</circuit>
