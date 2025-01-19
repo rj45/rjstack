@@ -11,6 +11,18 @@ An FPGA stack machine CPU.
 - [customasm](https://github.com/hlorenzi/customasm)
 - [digital](https://github.com/hneemann/Digital)
 
+## Assembling the microcode
+
+```sh
+customasm -f logisim8 microcode/microcode.asm -o dig/microcode.hex
+```
+
+## Assembling programs
+
+```sh
+customasm -f logisim16 programs/cpudef.asm -o dig/program.hex
+```
+
 ## License
 
 [MIT](./LICENSE)
