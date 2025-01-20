@@ -39,6 +39,10 @@
           <string>ros</string>
         </entry>
         <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
+        <entry>
           <string>Bits</string>
           <int>16</int>
         </entry>
@@ -51,6 +55,10 @@
         <entry>
           <string>Label</string>
           <string>tos</string>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
         </entry>
         <entry>
           <string>Bits</string>
@@ -94,6 +102,10 @@
           <string>Bits</string>
           <int>16</int>
         </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>decSigned</intFormat>
+        </entry>
       </elementAttributes>
       <pos x="1260" y="420"/>
     </visualElement>
@@ -120,7 +132,7 @@
         </entry>
         <entry>
           <string>Frequency</string>
-          <int>5</int>
+          <int>20</int>
         </entry>
         <entry>
           <string>runRealTime</string>

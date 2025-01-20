@@ -39,7 +39,7 @@ drop: ; 0b0011
     op POP | WE_NOS_TOS
 
 dupe: ; 0b0100
-    op PUSH | WE_NOS_TOS
+    op PUSH
 
 jump: ; 0b0101
     op JUMP_AL

@@ -2,7 +2,7 @@
 {
     #bits 16
     #addr 0
-    #size 1<<5
+    #size 1<<8
     #outp 0
     #fill
 }
@@ -45,6 +45,13 @@
 
 beginning:
 
+test_drop:
+    li 0
+    li 1
+    drop
+    haltnz
+    drop
+
 test_addition:
     li 1
     li 2
@@ -56,11 +63,34 @@ test_addition:
     haltnz
     drop
 
-test_drop:
-    li 0
+test_dupe:
     li 1
-    drop
+    dupe
+    add
+    li -2
+    add
     haltnz
     drop
 
+test_jump:
+    li 1
+    jump forward
+    li 2
+backward:
+    li 3
+    jump end
+    li 4
+forward:
+    li 5
+    jump backward
+    li 6
+end:
+    add
+    add
+    li -9
+    add
+    haltnz
+    drop
+
+finished:
     jump beginning
