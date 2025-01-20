@@ -5,6 +5,13 @@ WE_I_TOS = 1 << 2
 WE_NOS_TOS = 1 << 3
 WE_Y_TOS = 1 << 4
 
+HALT = 1 << 5
+
+JUMP_NV = 0 << 6
+JUMP_AL = 1 << 6
+JUMP_ZR = 2 << 6
+JUMP_NZ = 3 << 6
+
 
 #ruledef {
     op {flags} => le(flags`8)
@@ -33,3 +40,15 @@ drop: ; 0b0011
 
 dupe: ; 0b0100
     op PUSH | WE_NOS_TOS
+
+jump: ; 0b0101
+    op JUMP_AL
+
+jumpz: ; 0b0110
+    op JUMP_ZR
+
+jumpnz: ; 0b0111
+    op JUMP_NZ
+
+halt: ; 0b1000
+    op HALT
